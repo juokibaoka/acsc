@@ -1,5 +1,10 @@
 proxies:
-  - {"name":"🇸🇬SG-188.166.231.115-byu_twtr-sg1_natanvp","type":"trojan","server":"space.byu.id","port":443,"password":"a","alterId":0,"cipher":"chacha20-poly1305","tls":true,"skip-cert-verify":true,"sni":"dox13.natanvpn.xyz","network":"ws","ws-opts":{"path":"/trojan","headers":{"Host":"dox13.natanvpn.xyz"}},"udp":true}
+  - name: "🇸🇬SG-188.166.231.115-byu_twtr-sg1_natanvp"
+  - type: "trojan"
+  - server: "space.byu.id"
+  - port: 443
+  - password: "a"
+  - "alterId":0,"cipher":"chacha20-poly1305","tls":true,"skip-cert-verify":true,"sni":"dox13.natanvpn.xyz","network":"ws","ws-opts":{"path":"/trojan","headers":{"Host":"dox13.natanvpn.xyz"}},"udp":true}
   - {"name":"🇸🇬SG-188.166.231.115-sushi_twtr-sg1_natanvp","type":"trojan","server":"www.sushiroll.co.id","port":443,"password":"a","alterId":0,"cipher":"chacha20-poly1305","tls":true,"skip-cert-verify":true,"sni":"dox13.natanvpn.xyz","network":"ws","ws-opts":{"path":"/trojan","headers":{"Host":"dox13.natanvpn.xyz"}},"udp":true}
   - {"name":"🇸🇬SG-188.166.231.115-appsflyer_twtr-sg1_natanvp","type":"trojan","server":"cdn.appsflyer.com","port":443,"password":"a","alterId":0,"cipher":"chacha20-poly1305","tls":true,"skip-cert-verify":true,"sni":"dox13.natanvpn.xyz","network":"ws","ws-opts":{"path":"/trojan","headers":{"Host":"dox13.natanvpn.xyz"}},"udp":true}
   - {"name":"🇸🇬SG-188.166.231.115-udemycdn_twtr-sg1_natanvp","type":"trojan","server":"s.udemycdn.com","port":443,"password":"a","alterId":0,"cipher":"chacha20-poly1305","tls":true,"skip-cert-verify":true,"sni":"dox13.natanvpn.xyz","network":"ws","ws-opts":{"path":"/trojan","headers":{"Host":"dox13.natanvpn.xyz"}},"udp":true}
