@@ -22,6 +22,7 @@ proxy-groups:
     disable-udp: false
     proxies:
       - ðŸ‡¸ðŸ‡¬SG-garena_ssot-sg1_greenssh
+      - REJECT
       - DIRECT
     url: http://www.gstatic.com/generate_204
     interval: 360
@@ -34,5 +35,5 @@ rule-providers:
     path: "./rule_basicads.yaml"
 
 rules:
-  - RULE-SET,rule_basicads,REJECT,no-resolve
+  - RULE-SET,rule_basicads,TraficSG,no-resolve
   - MATCH,TraficSG
