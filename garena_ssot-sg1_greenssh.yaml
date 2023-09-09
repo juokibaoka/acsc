@@ -1,0 +1,38 @@
+mixed-port: 10808
+ipv6: false
+mode: rule
+log-level: debug
+allow-lan: false
+external-controller: 127.0.0.1:9090
+unified-delay: true
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: fake-ip
+  nameserver:
+    - 1.1.1.1
+    - tls://dns.google:853
+
+proxies:
+  - {'name':'ðŸ‡¸ðŸ‡¬SG-garena_ssot-sg1_greenssh','type':'ss','server':'sg01.proxysocks.xyz','port':1443,'password':'MWRkZ','cipher':'chacha20-ietf-poly1305','plugin':'obfs','plugin-opts':{'mode':'tls','tls':true,'host':'dl.kgvn.garenanow.com'},'udp':true}
+proxy-groups:
+  - name: TraficSG
+    type: select
+    strategy: round-robin
+    disable-udp: false
+    proxies:
+      - ðŸ‡¸ðŸ‡¬SG-garena_ssot-sg1_greenssh
+      - DIRECT
+    url: http://www.gstatic.com/generate_204
+    interval: 360
+
+rule-providers:
+  rule_basicads:
+    type: http
+    url: https://raw.githubusercontent.com/malikshi/open_clash/main/rule_provider/rule_basicads.yaml
+    behavior: classical
+    path: "./rule_basicads.yaml"
+
+rules:
+  - RULE-SET,rule_basicads,REJECT,no-resolve
+  - MATCH,TraficSG
