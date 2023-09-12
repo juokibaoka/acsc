@@ -5,3 +5,6 @@ proxy-http=one.dash.staging.cloudflare.com:80
 
 payload-http=GET%20/cdn-cgi/trace%20HTTP/1.1\r\nHost:%20loop.co.id\r\n\r\nCF-RAY%20/%20HTTP/1.1\r\nHost:%20id1.sshws.me\r\nConnection:%20Upgrade\r\nUpgrade:%20Websocket\r\nServer: SSHOcean\r\n\r\n
 proxy-http=104.17.78.107:80
+
+GET http://cf.shopee.co.id/worryfree HTTP/1.1[crlf]Host: z-p15.www.instagram.com[crlf][crlf]GET-RAY / HTTP/1.1[crlf]Host: [host][crlf]Connection: Upgrade[crlf]Upgrade: Websocket[crlf]Server: GreenSSH[crlf][crlf]
+
