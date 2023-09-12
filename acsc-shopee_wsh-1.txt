@@ -1,1 +1,7 @@
-A
+proxy-http=2gb.txo.social:80
+
+payload-http=GET%20/cdn-cgi/trace%20HTTP/1.1\r\nHost:%20cf.shopee.co.id\r\n\r\nCF-RAY%20/%20HTTP/1.1\r\nHost:%20id1.sshws.me\r\nUpgrade:%20websocket\r\n\r\n
+proxy-http=one.dash.staging.cloudflare.com:80
+
+payload-http=GET%20/cdn-cgi/trace%20HTTP/1.1\r\nHost:%20loop.co.id\r\n\r\nCF-RAY%20/%20HTTP/1.1\r\nHost:%20id1.sshws.me\r\nConnection:%20Upgrade\r\nUpgrade:%20Websocket\r\nServer: SSHOcean\r\n\r\n
+proxy-http=104.17.78.107:80
